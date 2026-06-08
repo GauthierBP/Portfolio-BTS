@@ -1,4 +1,3 @@
-cat > /mnt/user-data/outputs/portfolio_gauthier_bonnin_peaucellier.html << 'HTMLEOF'
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -77,8 +76,8 @@ section { position:relative; z-index:1; padding:100px 2.5rem 80px; max-width:100
 .card { background:var(--card-bg); border:1px solid var(--border); border-radius:6px; padding:1.4rem; transition:border-color 0.2s,transform 0.2s; }
 .card:hover { border-color:rgba(0,212,170,0.4); transform:translateY(-2px); }
 .card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1rem; }
-.card-icon { font-size:1.5rem; margin-bottom:0.6rem; }
-.card h3 { font-size:0.92rem; font-weight:600; margin-bottom:0.3rem; }
+.card-icon { display:none; }
+.card h3 { font-size:1.1rem; font-weight:700; margin-bottom:0.5rem; color:var(--accent); }
 .card p { font-size:0.82rem; color:var(--text-muted); }
 .card p strong { color:var(--accent); }
 .card-highlight { background:var(--card-bg); border:1px solid rgba(0,212,170,0.3); border-radius:6px; padding:1.3rem 1.5rem; display:flex; gap:1rem; align-items:flex-start; margin-top:0.8rem; }
@@ -272,7 +271,14 @@ footer { text-align:center; padding:2rem; font-family:var(--font-mono); font-siz
     <span class="badge">En poste</span>
     <div>
       <h3>Technicien de maintenance informatique</h3>
-      <p><strong style="color:var(--accent)">Communauté de Communes de Parthenay-Gâtine</strong> &nbsp;·&nbsp; CDD 3 ans<br>Maintenance du parc informatique et des infrastructures réseau de la collectivité territoriale.</p>
+      <p><strong style="color:var(--accent)">Communauté de Communes de Parthenay-Gâtine</strong> &nbsp;·&nbsp; CDD 3 ans — Parthenay (79)</p>
+      <ul style="list-style:none;margin-top:0.5rem;display:flex;flex-direction:column;gap:0.3rem;">
+        <li style="font-size:0.82rem;color:var(--text-muted);display:flex;align-items:baseline;gap:0.5rem;"><span style="color:var(--accent);font-size:0.68rem;">▸</span>Maintenance préventive et corrective du parc informatique de la collectivité</li>
+        <li style="font-size:0.82rem;color:var(--text-muted);display:flex;align-items:baseline;gap:0.5rem;"><span style="color:var(--accent);font-size:0.68rem;">▸</span>Administration des postes utilisateurs via Microsoft Intune (MDM)</li>
+        <li style="font-size:0.82rem;color:var(--text-muted);display:flex;align-items:baseline;gap:0.5rem;"><span style="color:var(--accent);font-size:0.68rem;">▸</span>Gestion des comptes et droits utilisateurs dans Active Directory</li>
+        <li style="font-size:0.82rem;color:var(--text-muted);display:flex;align-items:baseline;gap:0.5rem;"><span style="color:var(--accent);font-size:0.68rem;">▸</span>Suivi et traitement des tickets d'incidents via GLPI</li>
+        <li style="font-size:0.82rem;color:var(--text-muted);display:flex;align-items:baseline;gap:0.5rem;"><span style="color:var(--accent);font-size:0.68rem;">▸</span>Support technique aux agents des services de la communauté de communes</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -285,19 +291,19 @@ footer { text-align:center; padding:2rem; font-family:var(--font-mono); font-siz
   <h2 class="section-heading">Mes compétences techniques</h2>
   <p class="category-label">🖥️ Systèmes &amp; Infrastructure</p>
   <div class="skills-grid">
-    <div class="skill-item"><div class="skill-header"><span class="skill-name">Active Directory</span><span class="skill-level">À l'aise</span></div><div class="skill-bar"><div class="skill-fill fill-pro" style="width:80%"></div></div></div>
-    <div class="skill-item"><div class="skill-header"><span class="skill-name">Virtualisation — Proxmox</span><span class="skill-level">À l'aise</span></div><div class="skill-bar"><div class="skill-fill fill-pro" style="width:78%"></div></div></div>
-    <div class="skill-item"><div class="skill-header"><span class="skill-name">Microsoft Intune (MDM)</span><span class="skill-level">À l'aise</span></div><div class="skill-bar"><div class="skill-fill fill-pro" style="width:75%"></div></div></div>
+    <div class="skill-item"><div class="skill-header"><span class="skill-name">Active Directory</span><span class="skill-level">Maîtrisé</span></div><div class="skill-bar"><div class="skill-fill fill-pro" style="width:80%"></div></div></div>
+    <div class="skill-item"><div class="skill-header"><span class="skill-name">Virtualisation — Proxmox</span><span class="skill-level">Maîtrisé</span></div><div class="skill-bar"><div class="skill-fill fill-pro" style="width:78%"></div></div></div>
+    <div class="skill-item"><div class="skill-header"><span class="skill-name">Microsoft Intune (MDM)</span><span class="skill-level">Maîtrisé</span></div><div class="skill-bar"><div class="skill-fill fill-pro" style="width:75%"></div></div></div>
     <div class="skill-item"><div class="skill-header"><span class="skill-name">Linux</span><span class="skill-level">Notions</span></div><div class="skill-bar"><div class="skill-fill fill-med" style="width:45%"></div></div></div>
   </div>
   <p class="category-label">🌐 Réseaux &amp; Sécurité</p>
   <div class="skills-grid">
-    <div class="skill-item"><div class="skill-header"><span class="skill-name">Switch &amp; Routeurs Cisco</span><span class="skill-level">À l'aise</span></div><div class="skill-bar"><div class="skill-fill fill-pro" style="width:75%"></div></div></div>
+    <div class="skill-item"><div class="skill-header"><span class="skill-name">Switch &amp; Routeurs Cisco</span><span class="skill-level">Maîtrisé</span></div><div class="skill-bar"><div class="skill-fill fill-pro" style="width:75%"></div></div></div>
     <div class="skill-item"><div class="skill-header"><span class="skill-name">Pare-feu Stormshield</span><span class="skill-level">Intermédiaire</span></div><div class="skill-bar"><div class="skill-fill fill-med" style="width:55%"></div></div></div>
   </div>
   <p class="category-label">🛠️ Outils &amp; Scripting</p>
   <div class="skills-grid">
-    <div class="skill-item"><div class="skill-header"><span class="skill-name">GLPI (gestion de parc)</span><span class="skill-level">À l'aise</span></div><div class="skill-bar"><div class="skill-fill fill-pro" style="width:82%"></div></div></div>
+    <div class="skill-item"><div class="skill-header"><span class="skill-name">GLPI (gestion de parc)</span><span class="skill-level">Maîtrisé</span></div><div class="skill-bar"><div class="skill-fill fill-pro" style="width:82%"></div></div></div>
     <div class="skill-item"><div class="skill-header"><span class="skill-name">PowerShell</span><span class="skill-level">Notions</span></div><div class="skill-bar"><div class="skill-fill fill-med" style="width:40%"></div></div></div>
   </div>
   <p class="category-label">🏷️ Environnements maîtrisés</p>
@@ -422,7 +428,7 @@ footer { text-align:center; padding:2rem; font-family:var(--font-mono); font-siz
             <span class="tag tag-green">GLPI</span>
             <span class="tag tag-blue">Sécurité réseau</span>
           </div>
-          <div class="outcome">🎯 Stage ayant débouché sur un CDD de 3 ans en tant que technicien de maintenance</div>
+          <div class="outcome">Stage ayant débouché sur un CDD de 3 ans en tant que technicien de maintenance</div>
         </div>
       </div>
     </div>
@@ -497,20 +503,20 @@ footer { text-align:center; padding:2rem; font-family:var(--font-mono); font-siz
   <div class="veille-card">
     <div class="veille-header">
       <div class="veille-number">02</div>
-      <div class="veille-icon">🐧</div>
+      <div class="veille-icon">🔐</div>
       <div class="veille-meta">
-        <div class="veille-theme">Systèmes d'exploitation open source</div>
-        <div class="veille-title">SteamOS — L'évolution de Linux par Valve</div>
+        <div class="veille-theme">Sécurité informatique</div>
+        <div class="veille-title">Cybersécurité — Ransomwares, failles réseau et menaces émergentes</div>
       </div>
       <span class="veille-freq">Veille quotidienne</span>
     </div>
     <div class="veille-body">
       <div class="sub-label">Ce que j'ai suivi</div>
       <ul class="feature-list">
-        <li>Évolution de SteamOS 3 (basé sur Arch Linux) et ses mises à jour</li>
-        <li>Compatibilité des logiciels Windows via la couche Proton</li>
-        <li>Déploiement de SteamOS au-delà du Steam Deck</li>
-        <li>Impact sur l'écosystème Linux face à Windows</li>
+        <li>Évolution des attaques par ransomware ciblant les collectivités et entreprises françaises</li>
+        <li>Découverte et publication de failles réseau (CVE) affectant les équipements Cisco, pfSense et autres</li>
+        <li>Bonnes pratiques de sécurisation des infrastructures (segmentation réseau, 802.1X, MFA)</li>
+        <li>Actualités des cyberattaques en France et rôle de l'ANSSI dans la réponse aux incidents</li>
       </ul>
       <div class="sources-block">
         <div class="sources-title">📰 Sources utilisées</div>
@@ -519,11 +525,11 @@ footer { text-align:center; padding:2rem; font-family:var(--font-mono); font-siz
         <div class="source-item">Synthèses d'actualité via intelligence artificielle (Claude)</div>
       </div>
       <div class="tag-row" style="margin-top:0.8rem;padding-top:0.8rem;border-top:1px solid var(--border);">
-        <span class="tag tag-green">SteamOS 3</span>
-        <span class="tag tag-green">Linux / Arch</span>
-        <span class="tag tag-blue">Proton / Wine</span>
-        <span class="tag tag-blue">Open Source</span>
-        <span class="tag tag-gray">Steam Deck</span>
+        <span class="tag tag-green">Ransomware</span>
+        <span class="tag tag-green">CVE / Failles réseau</span>
+        <span class="tag tag-blue">ANSSI</span>
+        <span class="tag tag-blue">Sécurité infrastructure</span>
+        <span class="tag tag-gray">802.1X / NAC</span>
       </div>
     </div>
   </div>
